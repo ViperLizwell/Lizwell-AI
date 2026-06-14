@@ -1,1 +1,1 @@
-# Lizwee-AI
+# Lizwell-AI
