@@ -76,6 +76,20 @@
         .info-text h4 { font-size: 16px; color: #1e3d59; margin-bottom: 5px; }
         .info-text p { color: #666; font-size: 15px; }
         .info-text a { color: #17b978; text-decoration: none; }
+        .contact-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
+        .contact-form-wrap { background-color: #fff; border-radius: 8px; padding: 35px; box-shadow: 0 4px 6px rgba(0,0,0,0.02); border-top: 4px solid #17b978; }
+        .contact-form-wrap h4 { font-size: 18px; color: #1e3d59; margin-bottom: 25px; font-weight: 700; }
+        .form-group { margin-bottom: 18px; }
+        .form-group label { display: block; font-size: 14px; color: #555; margin-bottom: 6px; font-weight: 500; }
+        .form-group input, .form-group textarea { width: 100%; padding: 10px 14px; border: 1px solid #dde1e7; border-radius: 6px; font-size: 15px; color: #333; transition: border-color 0.2s; outline: none; }
+        .form-group input:focus, .form-group textarea:focus { border-color: #17b978; box-shadow: 0 0 0 3px rgba(23,185,120,0.1); }
+        .form-group textarea { height: 130px; resize: vertical; }
+        .form-submit { display: inline-block; padding: 12px 32px; background-color: #1e3d59; color: #fff; font-size: 15px; font-weight: 700; border: none; border-radius: 50px; cursor: pointer; transition: background-color 0.3s, transform 0.2s; }
+        .form-submit:hover { background-color: #17b978; transform: translateY(-2px); }
+        .form-msg { display: none; margin-top: 15px; padding: 12px 16px; border-radius: 6px; font-size: 14px; }
+        .form-msg.success { background-color: #e8f7f0; color: #0e8c57; border: 1px solid #c3edd9; display: block; }
+        .form-msg.error { background-color: #fef0f0; color: #c0392b; border: 1px solid #f5c6c6; display: block; }
+        @media (max-width: 768px) { .contact-layout { grid-template-columns: 1fr; } }
         @media (max-width: 768px) {
             .about-grid, .grid-2 { grid-template-columns: 1fr; }
             .hero h2 { font-size: 32px; }
@@ -214,35 +228,58 @@
     <section class="section" id="contact">
         <div class="container">
             <h3 class="section-title">聯絡我們 / お問い合わせ</h3>
-            <div class="contact-info">
-                <div class="info-item">
-                    <div class="icon">✉</div>
-                    <div class="text info-text">
-                        <h4>電子郵件 / Email</h4>
-                        <p><a href="mailto:heidi@lizwell-ai.com">heidi@lizwell-ai.com</a></p>
+            <div class="contact-layout">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="icon">☎</div>
+                        <div class="text info-text">
+                            <h4>電話 / Telephone</h4>
+                            <p><a href="tel:+886958411988">+886 958 411 988</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="icon">📍</div>
+                        <div class="text info-text">
+                            <h4>辦公室地址 / Office Address</h4>
+                            <p>台北市松山區復興北路57號2樓之1</p>
+                            <p style="color: #888; font-size: 13px;">2F.-1, No.57, Fuxing N.Rd., Songshan Dist., Taipei City 105404, Taiwan (R.O.C.)</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="icon">📦</div>
+                        <div class="text info-text">
+                            <h4>倉庫地址 / Warehouse Address</h4>
+                            <p>新北市林口區文化三路1段39巷287號2樓</p>
+                        </div>
                     </div>
                 </div>
-                <div class="info-item">
-                    <div class="icon">☎</div>
-                    <div class="text info-text">
-                        <h4>電話 / Telephone</h4>
-                        <p><a href="tel:+886958411988">+886 958 411 988</a></p>
-                    </div>
-                </div>
-                <div class="info-item">
-                    <div class="icon">📍</div>
-                    <div class="text info-text">
-                        <h4>辦公室地址 / Office Address</h4>
-                        <p>台北市松山區復興北路57號2樓之1</p>
-                        <p style="color: #888; font-size: 13px;">2F.-1, No.57, Fuxing N.Rd., Songshan Dist., Taipei City 105404, Taiwan (R.O.C.)</p>
-                    </div>
-                </div>
-                <div class="info-item">
-                    <div class="icon">📦</div>
-                    <div class="text info-text">
-                        <h4>倉庫地址 / Warehouse Address</h4>
-                        <p>新北市林口區文化三路1段39巷287號2樓</p>
-                    </div>
+
+                <div class="contact-form-wrap">
+                    <h4>お問い合わせフォーム / 詢問表單</h4>
+                    <div data-fs-success class="form-msg success" style="display:none;">✓ お問い合わせを受け付けました。近日中にご連絡いたします。</div>
+                    <div data-fs-error class="form-msg error" style="display:none;">✗ 送信に失敗しました。しばらくしてから再度お試しください。</div>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">お名前 / 姓名 <span style="color:#e74c3c;">*</span></label>
+                            <input type="text" id="name" name="name" required placeholder="例：山田 太郎" data-fs-field>
+                            <span data-fs-error="name" style="color:#c0392b; font-size:13px;"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">会社名 / 公司名稱</label>
+                            <input type="text" id="company" name="company" placeholder="例：株式会社〇〇" data-fs-field>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">メールアドレス / 電子郵件 <span style="color:#e74c3c;">*</span></label>
+                            <input type="email" id="email" name="email" required placeholder="example@company.com" data-fs-field>
+                            <span data-fs-error="email" style="color:#c0392b; font-size:13px;"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">お問い合わせ内容 / 詢問內容 <span style="color:#e74c3c;">*</span></label>
+                            <textarea id="message" name="message" required placeholder="ご質問・ご要望をご記入ください。" data-fs-field></textarea>
+                            <span data-fs-error="message" style="color:#c0392b; font-size:13px;"></span>
+                        </div>
+                        <button type="submit" class="form-submit" data-fs-submit-btn>送信 / 送出</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -272,6 +309,9 @@
             });
         });
 
+        window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+        formspree('initForm', { formElement: '#contact-form', formId: 'mbdeweol' });
+
         const navLinks = mainNav.querySelectorAll('a');
         const sections = document.querySelectorAll('section[id]');
         const sectionObserver = new IntersectionObserver((entries) => {
@@ -286,5 +326,6 @@
 
         sections.forEach(section => sectionObserver.observe(section));
     </script>
+    <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
 </body>
 </html>
