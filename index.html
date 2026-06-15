@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIZWELL International Trading Co. | 力日企業社</title>
+    <meta name="description" content="LIZWELL International Trading Co.(力日企業社)是台灣與日本優質工業產品及高級AV設備之國際貿易公司，提供AI智慧追尾攝影機、無線簡報系統、智慧錄播系統等解決方案，銷售網路涵蓋印度、菲律賓、孟加拉、泰國、印尼、智利等市場。">
+    <meta name="theme-color" content="#1e3d59">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="LIZWELL International Trading Co.">
+    <meta property="og:title" content="LIZWELL International Trading Co. | 力日企業社">
+    <meta property="og:description" content="台灣與日本優質工業產品及高級AV設備之國際貿易公司，主力產品包括AI智慧追尾攝影機、無線簡報系統、智慧錄播系統。">
+    <meta property="og:image" content="original.png">
+    <meta property="og:url" content="https://lizwell-ai.com/">
+    <meta property="og:locale" content="zh_TW">
+    <meta property="og:locale:alternate" content="ja_JP">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="LIZWELL International Trading Co. | 力日企業社">
+    <meta name="twitter:description" content="台灣與日本優質工業產品及高級AV設備之國際貿易公司，主力產品包括AI智慧追尾攝影機、無線簡報系統、智慧錄播系統。">
+    <meta name="twitter:image" content="original.png">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Helvetica Neue', Arial, 'Noto Sans TC', sans-serif; }
+        html { scroll-behavior: smooth; scroll-padding-top: 70px; }
+        body { color: #333; line-height: 1.6; background-color: #f8f9fa; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+        header { background-color: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.05); position: fixed; width: 100%; top: 0; z-index: 1000; }
+        .header-wrap { display: flex; justify-content: space-between; align-items: center; height: 70px; position: relative; }
+        .logo h1 { font-size: 24px; color: #1e3d59; font-weight: 700; letter-spacing: 0.5px; }
+        nav a { text-decoration: none; color: #555; margin-left: 25px; font-weight: 500; transition: color 0.3s; }
+        nav a:hover, nav a.active { color: #17b978; }
+        .menu-toggle { display: none; flex-direction: column; justify-content: center; gap: 5px; width: 30px; height: 22px; background: none; border: none; cursor: pointer; padding: 0; }
+        .menu-toggle span { display: block; width: 100%; height: 3px; background-color: #1e3d59; border-radius: 2px; transition: transform 0.3s, opacity 0.3s; }
+        .menu-toggle.active span:nth-child(1) { transform: translateY(8.5px) rotate(45deg); }
+        .menu-toggle.active span:nth-child(2) { opacity: 0; }
+        .menu-toggle.active span:nth-child(3) { transform: translateY(-8.5px) rotate(-45deg); }
+        .hero { background: linear-gradient(135deg, #1e3d59 0%, #17b978 100%); color: #fff; padding: 160px 0 100px 0; text-align: center; }
+        .hero h2 { font-size: 42px; margin-bottom: 15px; font-weight: 700; letter-spacing: 1px; }
+        .hero p { font-size: 20px; opacity: 0.9; font-style: italic; }
+        .cta-button { display: inline-block; margin-top: 35px; padding: 14px 38px; background-color: #fff; color: #1e3d59; font-weight: 700; font-size: 16px; border-radius: 50px; text-decoration: none; box-shadow: 0 4px 15px rgba(0,0,0,0.15); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .cta-button:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(0,0,0,0.2); }
+        .section { padding: 80px 0; }
+        .section-title { text-align: center; font-size: 28px; color: #1e3d59; margin-bottom: 40px; position: relative; padding-bottom: 10px; }
+        .section-title::after { content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 50px; height: 3px; background-color: #17b978; }
+        .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; background: #fff; padding: 40px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.02); margin-bottom: 30px; }
+        .concept-card { background: #fff; padding: 40px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.02); border-left: 5px solid #17b978; margin-top: 30px; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .concept-card:hover { transform: translateY(-5px); box-shadow: 0 10px 24px rgba(0,0,0,0.08); }
+        .concept-title { font-size: 22px; color: #1e3d59; margin-bottom: 15px; font-weight: 700; }
+        .concept-item { margin-top: 15px; }
+        .concept-letter { font-weight: bold; color: #17b978; font-size: 18px; }
+        .profile-table { width: 100%; border-collapse: collapse; }
+        .profile-table th, .profile-table td { padding: 12px 8px; border-bottom: 1px solid #eee; text-align: left; }
+        .profile-table th { color: #1e3d59; width: 30%; font-weight: 600; }
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 40px; }
+        .card { background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.02); border-top: 4px solid #1e3d59; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 10px 24px rgba(0,0,0,0.08); }
+        .card h4 { font-size: 20px; color: #1e3d59; margin-bottom: 15px; }
+        .card ul { list-style: none; color: #555; }
+        .card ul li { margin-bottom: 8px; padding-left: 15px; position: relative; }
+        .card ul li::before { content: "•"; color: #17b978; position: absolute; left: 0; font-weight: bold; }
+        .product-gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-top: 30px; }
+        .product-item { background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.02); text-align: center; border: 1px solid #eef2f5; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .product-item:hover { transform: translateY(-5px); box-shadow: 0 10px 24px rgba(0,0,0,0.08); }
+        .product-img-box { width: 100%; height: 220px; background-color: #fff; display: flex; align-items: center; justify-content: center; overflow: hidden; padding: 10px; }
+        .product-img-box img { max-width: 100%; max-height: 100%; object-fit: contain; }
+        .product-info { padding: 15px; background-color: #ffffff; border-top: 1px solid #eee; }
+        .product-info h5 { font-size: 16px; color: #1e3d59; margin-bottom: 5px; }
+        .product-info p { font-size: 13px; color: #666; }
+        .market-tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 20px; }
+        .tag { background-color: #e8f7f0; color: #17b978; padding: 8px 16px; border-radius: 50px; font-weight: 500; font-size: 15px; border: 1px solid #c3edd9; }
+        .contact-info { background-color: #ffffff; border-radius: 8px; padding: 40px; box-shadow: 0 4px 6px rgba(0,0,0,0.02); }
+        .info-item { display: flex; margin-bottom: 25px; align-items: flex-start; }
+        .info-item .icon { background-color: #e8f7f0; color: #17b978; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-right: 20px; flex-shrink: 0; }
+        .info-text h4 { font-size: 16px; color: #1e3d59; margin-bottom: 5px; }
+        .info-text p { color: #666; font-size: 15px; }
+        .info-text a { color: #17b978; text-decoration: none; }
+        @media (max-width: 768px) {
+            .about-grid, .grid-2 { grid-template-columns: 1fr; }
+            .hero h2 { font-size: 32px; }
+            .menu-toggle { display: flex; }
+            nav#main-nav {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                right: 0;
+                background-color: #fff;
+                box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s ease;
+            }
+            nav#main-nav.active { max-height: 300px; }
+            nav#main-nav a { margin: 0; padding: 16px 20px; border-bottom: 1px solid #f0f0f0; }
+        }
+        footer { background-color: #1e3d59; color: #fff; text-align: center; padding: 30px 0; font-size: 14px; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-wrap">
+            <div class="logo"><h1>Lizwell Trading</h1></div>
+            <nav id="main-nav">
+                <a href="#about">關於我們 (会社紹介)</a>
+                <a href="#products">核心業務 (事業内容)</a>
+                <a href="#contact">聯絡我們 (問い合わせ)</a>
+            </nav>
+            <button class="menu-toggle" id="menu-toggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="main-nav">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>LIZWELL International Trading Co.</h2>
+            <p>Advanced Alliance &amp; Intelligent Integration</p>
+            <a href="#contact" class="cta-button">聯絡我們 / お問い合わせ</a>
+        </div>
+    </section>
+
+    <section class="section" id="about">
+        <div class="container">
+            <h3 class="section-title">關於我們 / 会社概要</h3>
+            <div class="about-grid">
+                <div>
+                    <p style="margin-bottom: 20px; color: #555;">LIZWELL International Trading Co.（力日企業社）是一家專門從事台灣及日本優質工業產品與高級影音（AV）設備海外銷售的國際貿易公司。</p>
+                    <p style="color: #555;">LIZWELL International Trading Co.（力日企業社）は、台湾および日本の優れた工業製品、ならびに高度なAV（音響映像）機器の海外販売を展開する国際貿易会社です。</p>
+                </div>
+                <div>
+                    <table class="profile-table">
+                        <tr><th>公司名稱</th><td>LIZWELL International Trading Co.<br><span style="color:#666;">力日企業社</span></td></tr>
+                        <tr><th>統一編號</th><td>88137620</td></tr>
+                        <tr><th>負責人 / 業務</th><td>解綺禎 (Sales Person)</td></tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="concept-card">
+                <div class="concept-title">What "AI" Means to Us</div>
+                <p style="color: #555; margin-bottom: 15px;">我們的網域「lizwell-ai.com」中的 <strong>AI</strong>，不僅代表我們提供最頂尖的智慧人工知能（Artificial Intelligence）設備，更蘊含了我們核心業務的兩大承諾：</p>
+                <p style="color: #555; margin-bottom: 20px;">私たちのドメイン「lizwell-ai.com」の <strong>AI</strong> には、最先端の人工知能製品をお届けするという意味だけでなく、私たちのビジネスの原点となる2つの約束が込められています：</p>
+                
+                <div class="concept-item">
+                    <p><span class="concept-letter">A</span> <strong>— Global Alliance (全球戰略合作 / グローバル・アライアンス)</strong></p>
+                    <p style="color: #666; font-size: 15px; padding-left: 20px;">與台灣、日本及全球頂尖製造商建立穩固的信賴關係，跨越國界提供最高品質的產品。</p>
+                </div>
+                <div class="concept-item">
+                    <p><span class="concept-letter">I</span> <strong>— Advanced Integration (高級系統整合 / アドバンスド・インテグレーション)</strong></p>
+                    <p style="color: #666; font-size: 15px; padding-left: 20px;">不只是單純的貿易，更將AI自動追尾攝影機與智慧錄播系統高度整合，為客戶量身打造最完善的解決方案。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background-color: #f0f4f8;" id="products">
+        <div class="container">
+            <h3 class="section-title">核心業務 / 事業内容</h3>
+            <div class="grid-2">
+                <div class="card">
+                    <h4>進出口貿易 / 工業製品貿易</h4>
+                    <ul>
+                        <li>台灣工業產品海外銷售 (台湾工業製品の海外販売)</li>
+                        <li>日本工業產品海外銷售 (日本工業製品の海外販売)</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h4>專業影音與協作系統 / AV &amp; Collaboration</h4>
+                    <ul>
+                        <li>AI 智慧自動追尾攝影機 (AI Tracking PTZ Camera)</li>
+                        <li>無線簡報與會議系統 (Wireless Presentation &amp; BYOM)</li>
+                        <li>智慧錄播與演講系統 (Lecture Capture System)</li>
+                        <li>多功能會議麥克風揚聲器 (Conference Speakerphone)</li>
+                        <li>專業攝影機控制器 (PTZ Camera Controller)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h4 style="color: #1e3d59; text-align: center; margin-top: 40px; margin-bottom: 20px; font-size: 20px;">主要經銷產品 / 取扱製品例</h4>
+            <div class="product-gallery">
+                <div class="product-item">
+                    <div class="product-img-box"><img src="original.png" alt="CAVE-TEK PTZ Camera"></div>
+                    <div class="product-info">
+                        <h5>AI 智慧追尾攝影機 / AI Tracking PTZ Camera</h5>
+                        <p>CAVE-TEK 專業高畫質視訊會議與智慧追尾攝影機</p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-img-box"><img src="original(1).jpg" alt="Lecture Capture System"></div>
+                    <div class="product-info">
+                        <h5>錄播與智慧演講系統 / Lecture Capture</h5>
+                        <p>整合商務簡報與智慧教學的高效錄播解決方案</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 60px; text-align: center;">
+                <h4 style="color: #1e3d59; margin-bottom: 15px; font-size: 20px;">全球網路 / 全球市場 (Global Network)</h4>
+                <div class="market-tags">
+                    <span class="tag">印度 (India)</span>
+                    <span class="tag">菲律賓 (Philippines)</span>
+                    <span class="tag">孟加拉 (Bangladesh)</span>
+                    <span class="tag">泰國 (Thailand)</span>
+                    <span class="tag">印尼 (Indonesia)</span>
+                    <span class="tag">智利 (Chile)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="contact">
+        <div class="container">
+            <h3 class="section-title">聯絡我們 / お問い合わせ</h3>
+            <div class="contact-info">
+                <div class="info-item">
+                    <div class="icon">✉</div>
+                    <div class="text info-text">
+                        <h4>電子郵件 / Email</h4>
+                        <p><a href="mailto:heidi@lizwell-ai.com">heidi@lizwell-ai.com</a></p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="icon">☎</div>
+                    <div class="text info-text">
+                        <h4>電話 / Telephone</h4>
+                        <p><a href="tel:+886958411988">+886 958 411 988</a></p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="icon">📍</div>
+                    <div class="text info-text">
+                        <h4>辦公室地址 / Office Address</h4>
+                        <p>台北市松山區復興北路57號2樓之1</p>
+                        <p style="color: #888; font-size: 13px;">2F.-1, No.57, Fuxing N.Rd., Songshan Dist., Taipei City 105404, Taiwan (R.O.C.)</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="icon">📦</div>
+                    <div class="text info-text">
+                        <h4>倉庫地址 / Warehouse Address</h4>
+                        <p>新北市林口區文化三路1段39巷287號2樓</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 LIZWELL International Trading Co. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mainNav = document.getElementById('main-nav');
+
+        menuToggle.addEventListener('click', () => {
+            const isActive = mainNav.classList.toggle('active');
+            menuToggle.classList.toggle('active', isActive);
+            menuToggle.setAttribute('aria-expanded', String(isActive));
+        });
+
+        mainNav.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mainNav.classList.remove('active');
+                menuToggle.classList.remove('active');
+                menuToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        const navLinks = mainNav.querySelectorAll('a');
+        const sections = document.querySelectorAll('section[id]');
+        const sectionObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    navLinks.forEach(link => {
+                        link.classList.toggle('active', link.getAttribute('href') === `#${entry.target.id}`);
+                    });
+                }
+            });
+        }, { rootMargin: '-45% 0px -50% 0px' });
+
+        sections.forEach(section => sectionObserver.observe(section));
+    </script>
+</body>
+</html>
